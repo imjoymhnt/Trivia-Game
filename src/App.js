@@ -11,7 +11,6 @@ function App() {
   const [answer, setAnswer] = useState("");
 
   const onFinish = (values) => {
-    console.log("Success:", values);
     if (values["Answer"].toLowerCase() === answer.toLocaleLowerCase()) {
       Swal.fire("Wow!! 😎", "You're Genious!!", "success").then((result) => {
         if (result.isConfirmed) {
